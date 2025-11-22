@@ -1,31 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Simple Sudoku — Build & Publish</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Simple Sudoku</h1>
-    <div class="controls">
-      <label for="difficulty">Difficulty</label>
-      <select id="difficulty">
-        <option value="easy">Easy</option>
-        <option value="medium" selected>Medium</option>
-        <option value="hard">Hard</option>
-      </select>
-      <button id="newBtn">New Game</button>
-      <button id="checkBtn">Check</button>
-      <button id="solveBtn">Solve</button>
+
+<h1>Sudoku</h1>
+
+<div class="top-bar">
+    <div>
+        Difficulty:
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
     </div>
-    <div id="board" class="board"></div>
-    <div class="footer">
-      <span id="message"></span>
-      <button id="publishGuide">How to publish</button>
-    </div>
-  </main>
-  <script src="script.js"></script>
+
+    <div class="timer">⏱ Time: <span id="timer">00:00</span></div>
+</div>
+
+<div id="sudoku"></div>
+<button id="checkBtn">Check Solution</button>
+
+<script src="script.js"></script>
 </body>
 </html>
